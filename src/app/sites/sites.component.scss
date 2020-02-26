@@ -10,4 +10,11 @@
 
 .item{
   height: 120px;
+  background: gray;
+}
+
+::ng-deep {
+  .mat-tab-label-container {
+    background: gray;
+  }
 }
