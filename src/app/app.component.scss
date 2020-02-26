@@ -6,3 +6,40 @@
   right: 0;
   background: #eee;
 }
+.left-sidebar{
+  background: #123773;
+  width: 185px;
+}
+.left-sidebar img{
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.permits-style {
+  list-style-image: url("https://88532479.safetymint.com/packs/images/icon-permits-7c39cbf5c94438eaef5dfe3b6c277ecf.png");
+  color: white;
+  padding: auto;
+}
+.setting-style{
+  list-style-image: url("https://88532479.safetymint.com/packs/images/icon-setting-6a0f9ace94907493db537679c3ad1e32.png");
+}
+
+.menu-setting, ul{
+  background: #123773;
+  color: white;
+  box-shadow: none;
+  text-align: left;
+  margin-left: -10px;
+}
+.menu-setting li{
+  list-style-type: none;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.bottom-panele{
+  margin-top: -10px;
+}
+
+
+
+
+

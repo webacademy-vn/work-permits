@@ -1,19 +1,56 @@
 <mat-drawer-container class="example-container">
+  <mat-drawer class="left-sidebar" mode="side" opened>
 
-  <mat-drawer mode="side" opened>
+
+
+    <img src="https://88532479.safetymint.com/packs/images/logo-02a99310cb638b46012d63090c6abad9.png" alt="" routerLink="/permits">
+
+
 
     <mat-list>
-      <mat-list-item>Permits</mat-list-item>
-      <mat-list-item>Setting</mat-list-item>
-      <mat-list-item>item</mat-list-item>
+      <mat-list-item class="permits-style" routerLink="/permits">
+        <ul>
+          <li>Permits</li>
+        </ul>
+      </mat-list-item>
     </mat-list>
 
+
+      <mat-accordion >
+        <mat-expansion-panel class="menu-setting">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <ul class="setting-style">
+                <li >Setting</li>
+              </ul>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <ul class="bottom-panele">
+              <li routerLink="/sites">Sites</li>
+              <li routerLink="/roles">Roles</li>
+              <li routerLink="/users">Users</li>
+              <li routerLink="/permit-temlates">Permit Templates</li>
+              <li routerLink="/worker-profile">Worker Profile</li>
+              <li routerLink="/workflows">Workflows</li>
+            </ul>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+
+
+
+
   </mat-drawer>
-
   <mat-drawer-content>
-
     <router-outlet></router-outlet>
-
   </mat-drawer-content>
-
 </mat-drawer-container>
+
+
+
+
+
+
+
+
+
