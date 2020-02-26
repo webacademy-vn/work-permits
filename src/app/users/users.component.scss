@@ -1,0 +1,30 @@
+.mat-toolbar {
+    background-color: #fff;
+    color: #123773;
+}
+
+.example-container {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+}
+
+input#check1:checked + .fa-exclamation-circle {
+    display: block;
+}
+
+input#check1 + .fa-exclamation-circle {
+    display: none;
+}
+
+input[name="c"] {
+    display: none;
+}
+
+.hidden { 
+    display: none;
+}
+
+.block {
+    display: bock;
+}

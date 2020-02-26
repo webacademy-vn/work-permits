@@ -1,1 +1,17 @@
-<p>users works!</p>
+<mat-toolbar>
+    Users
+    <label for="check2" (click)="clickEvent()">
+        <input type="radio" id="check1" name="c">
+        <fa-icon [icon]="faExclamationCircle" class="fa-exclamation-circle"></fa-icon>
+    </label>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" position="end" opened>FORM</mat-drawer>
+    <mat-drawer-content>
+        <div class="warnInfo" [ngClass]="status ? 'block' : 'hidden'">
+            <label for="check1"  (click)="clickEvent()" ><fa-icon [icon]="faTimes" class="fa-times"></fa-icon></label>
+            <input type="radio" name="c" id="check2" checked>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>
