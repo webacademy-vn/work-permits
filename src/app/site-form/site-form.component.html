@@ -4,37 +4,38 @@
 
     <div class="form-control">
       <label>Site Name<span>*</span></label><br>
-      <input type="text">
+      <input type="text" formControlName="siteName">
     </div>
 
     <div class="form-control">
       <label>Site ID</label><br>
-      <input type="text" formControl="email">
+      <input type="text" formControlName="siteId">
     </div>
 
     <div class="form-control">
       <label>Time zone<span>*</span></label><br>
-      <input type="text">
+      <input type="text" formControlName="timeZone">
     </div>
 
     <div class="form-control">
       <label>Select ocuupier<span>*</span></label><br>
-      <input type="text">
+      <input type="text" formControlName="selectOccupier">
     </div>
 
     <div class="form-control">
       <label>Emergency mobile number<span>*</span></label><br>
-      <input type="text">
+      <input type="text" formControlName="emergencyMobileNumber">
     </div>
 
     <div class="form-control">
       <label>Emergency email ID<span>*</span></label><br>
-      <input type="text">
+      <input type="text" formControlName="emergencyEmailId">
     </div>
     <div class="form-radio">
-      <div><input type="radio" value="active" name="ckekbox" checked>
-        <label>Active</label>
-        <input class="last-radio" type="radio" value="inactiv" name="ckekbox">
+      <div>
+        <input type="radio" value="active" formControlName="isActive">
+        <label>Active</label><fa-icon [icon]="faExclamationCircle"></fa-icon>
+        <input class="last-radio" type="radio" value="inactive" formControlName="isActive">
         <label>Inactive</label>
       </div>
 
