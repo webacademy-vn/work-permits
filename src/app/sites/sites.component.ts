@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
+
 @Component({
   selector: 'app-sites',
   templateUrl: './sites.component.html',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SitesComponent implements OnInit {
 
-
+title = "123123"
 
 
 

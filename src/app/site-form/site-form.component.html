@@ -1,0 +1,46 @@
+<div class="conteiner">
+  <form class="add-site" [formGroup]="form" (ngSubmit)="submit()">
+    <h3>Add New Site</h3>
+
+    <div class="form-control">
+      <label>Site Name<span>*</span></label><br>
+      <input type="text">
+    </div>
+
+    <div class="form-control">
+      <label>Site ID</label><br>
+      <input type="text" formControl="email">
+    </div>
+
+    <div class="form-control">
+      <label>Time zone<span>*</span></label><br>
+      <input type="text">
+    </div>
+
+    <div class="form-control">
+      <label>Select ocuupier<span>*</span></label><br>
+      <input type="text">
+    </div>
+
+    <div class="form-control">
+      <label>Emergency mobile number<span>*</span></label><br>
+      <input type="text">
+    </div>
+
+    <div class="form-control">
+      <label>Emergency email ID<span>*</span></label><br>
+      <input type="text">
+    </div>
+    <div class="form-radio">
+      <div><input type="radio" value="active" name="ckekbox" checked>
+        <label>Active</label>
+        <input class="last-radio" type="radio" value="inactiv" name="ckekbox">
+        <label>Inactive</label>
+      </div>
+
+    </div>
+
+    <button class="submit-button" type="submit" [disabled]="form.invalid">Submit</button>
+
+  </form>
+</div>

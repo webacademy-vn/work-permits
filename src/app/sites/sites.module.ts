@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SitesComponent } from './sites.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { SiteFormModule } from '../site-form/site-form.module';
 
 
 
@@ -9,7 +10,8 @@ import { MatTabsModule } from '@angular/material/tabs';
   declarations: [SitesComponent],
   imports: [
     CommonModule,
-    MatTabsModule
+    MatTabsModule,
+    SiteFormModule
   ],
   exports: [SitesComponent]
 })

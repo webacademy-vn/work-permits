@@ -8,13 +8,32 @@
   color: #123773;
 }
 
-.item{
-  height: 120px;
-  background: gray;
+.center-div{
+  height: 95px;
+  background: #f3f5f8;
 }
 
 ::ng-deep {
   .mat-tab-label-container {
-    background: gray;
+    background: #f3f5f8;
   }
+}
+
+.site-menu{
+  width: 1000px;
+  height: 100%;
+}
+.form-in-site{
+  width: 400px;
+  height: 100%;
+  background: #fafbfc;
+  border-left: 3px solid gainsboro;
+}
+.site-footer{
+  height: 50px;
+}
+.main-site-div{
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
