@@ -8,10 +8,16 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
+import { ActiveUsersTableComponent } from './active-users-table/active-users-table.component';
+import { InactiveUsersTableComponent } from './inactive-users-table/inactive-users-table.component';
 
 
 @NgModule({
-  declarations: [UsersComponent],
+  declarations: [
+    UsersComponent,
+    ActiveUsersTableComponent,
+    InactiveUsersTableComponent
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -20,7 +26,7 @@ import { MatInputModule } from '@angular/material';
     MatTabsModule,
     MatTableModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
   ]
 })
 export class UsersModule { }
