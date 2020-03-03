@@ -1,7 +1,8 @@
 export interface User {
-    name: string;
-    id: number;
-    weight: number;
-    symbol: string;
-    active: boolean;
+    userFullName: string;
+    userId: number;
+    userEmail: string;
+    userIsActive: boolean;
+    userRole: number;
+    userIsVerified: boolean;
 }

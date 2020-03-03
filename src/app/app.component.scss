@@ -1,4 +1,8 @@
 
+.fixed {
+  position: fixed;
+}
+
 .example-container {
   position: absolute;
   top: 0;
@@ -43,7 +47,22 @@
   margin-top: -10px;
 }
 
+.copyright {
+  display: block;
+  background: #fff none repeat scroll 0 0;
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #dce2eb;
 
+  a {
+    color: #666;
+    text-decoration: none;
+  }:hover {
+    text-decoration: underline;
+  }
+}
 
 
 

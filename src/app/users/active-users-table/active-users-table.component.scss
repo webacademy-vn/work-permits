@@ -1,7 +1,69 @@
 @import '../users.component.scss';
 
+.flex {
+  display: flex;
+}
+
+.not-verified {
+  color: #f27742;
+}
+
 table {
     width: 100%;
-  }
+    border-collapse: collapse;
+    font-size: 13px;
+    thead {
+      background-color: #d3dae5;
+      th {
+        text-align: center;
+        padding: 7px 10px;
+        border: 1px solid #dddddd;
+        border-top: 0;
+        .coming-soon {
+          justify-content: left;
+          font-size: 11px;
+          font-weight: normal;
+          text-align: center;
+        }
+      }
+        th:first-child {
+          text-align: left;
+          border-left: 0;
+        }
+        th:last-child {
+           text-align: center;
+           border-right: 0;
+           border-left: 0;
+           width: 45px;
+        }
+        .border-none {
+          border-right: none;
+        }
+      
+    }
+      tbody {
+        tr:nth-child(even) {
+          background-color: #eef1f6;
+        }
 
-  
+        td {
+          text-align: center;
+          padding: 7px 10px;
+          border: 1px solid #dddddd;
+        }
+        td:first-child {
+          text-align: left;
+          border-left: 0;
+        }
+        td:last-child {
+          text-align: center;
+          border-right: 0;
+          border-left: 0;
+          width: 45px;
+        }
+        .border-none {
+          border-right: none;
+        }
+      }
+
+  }

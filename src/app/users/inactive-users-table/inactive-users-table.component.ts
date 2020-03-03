@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ELEMENT_DATA } from '../users';
-import { MatTableDataSource } from '@angular/material';
-import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { ELEMENT_DATA, USER_ROLES } from '../users';
+import { faExclamationCircle, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-inactive-users-table',
@@ -11,22 +10,13 @@ import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 export class InactiveUsersTableComponent implements OnInit {
 
   faExclamationCircle = faExclamationCircle;
-  elementData = ELEMENT_DATA;
-  displayedColumns: string[] = ['name', 'weight', 'symbol'];
-  dataSourceInactive = new MatTableDataSource(ELEMENT_DATA.filter(item => item.active === false));
+  faCheck = faCheck;
+
+  elementData = ELEMENT_DATA.filter(item => item.userIsActive === false);
+  userRoles = USER_ROLES;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSourceInactive.filter = filterValue.trim().toLowerCase();
-  }
-
-  isActive(userActivity) {
-    const arr = this.elementData.filter(item => item.active === userActivity);
-    return arr.length;
   }
 }

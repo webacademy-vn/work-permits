@@ -27,7 +27,7 @@ export class UsersComponent implements OnInit {
 
 
   isActive(userActivity) {
-    const arr = this.elementData.filter(item => item.active === userActivity);
+    const arr = this.elementData.filter(item => item.userIsActive === userActivity);
     return arr.length;
   }
   
