@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatListModule, MatMenuModule } from '@angular/material'
+import { MatSidenavModule, MatListModule, MatMenuModule, MAT_LABEL_GLOBAL_OPTIONS, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material'
 import { PermitsModule } from './permits/permits.module';
 import { SitesModule } from './sites/sites.module';
 import { RolesModule } from './roles/roles.module';
@@ -35,7 +35,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     WorkflowsModule,
     MatExpansionModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

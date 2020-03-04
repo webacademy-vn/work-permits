@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ELEMENT_DATA, USER_ROLES } from '../users';
-import { faExclamationCircle, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationCircle, faCheck, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-inactive-users-table',
@@ -11,6 +11,7 @@ export class InactiveUsersTableComponent implements OnInit {
 
   faExclamationCircle = faExclamationCircle;
   faCheck = faCheck;
+  faUserCircle = faUserCircle;
 
   elementData = ELEMENT_DATA.filter(item => item.userIsActive === false);
   userRoles = USER_ROLES;

@@ -54,7 +54,7 @@
                             <b>{{elem.userFullName}}</b>
                         </div>
                         <div>
-                            {{userRoles[elem.userRole].roleName}} / {{elem.userEmail}}
+                            {{userRoleName(elem)}} / {{elem.userEmail}}
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,9 @@
 
 </div>
 
-<div [hidden]="elementData.length !== 0">
-    <fa-icon [icon]="faExclamationCircle"></fa-icon>
-    No records found
+<div class="no-records-found" [hidden]="elementData.length !== 0">
+    <div class="no-records__found">
+        <fa-icon [icon]="faExclamationCircle" size="2x" [styles]="{'color': '#c1c4ce'}"></fa-icon>
+        <b>No records found</b>
+    </div>
 </div>

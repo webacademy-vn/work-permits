@@ -14,21 +14,22 @@
                 </th>
                 <th>
                     Incidents
-                    <div>
-                        Coming Soon
+                    <div class="coming-soon">
+                        Coming <br> Soon
                     </div>
                 </th>
-                <th>
+                <th class="border-none">
                     Audits
-                    <div>
-                        Coming Soon
+                    <div class="coming-soon">
+                        Coming <br> Soon
                     </div>
                 </th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td colspan="2">
+                <td colspan="2" style="text-align: right; padding: 15px;">
                     License Summary
                 </td>
                 <td>
@@ -37,34 +38,54 @@
                 <td>
                     -
                 </td>
-                <td>
+                <td class="border-none">
                     -
                 </td>
+                <td></td>
             </tr>
             <tr *ngFor="let elem of elementData">
                 <td>
-                    <div>
-                        {{elem.userFullName}}
-                    </div>
-                    <div>
-                        {{userRoles[elem.userRole].roleName}} / {{elem.userEmail}}
+                    <div class="flex">
+                        <div>
+                            <fa-icon [icon]="faUserCircle" size="2x" [styles]="{'color': '#f6a724'}"></fa-icon>
+                        </div>
+                        <div>
+                            <div>
+                                <b>{{elem.userFullName}}</b>
+                            </div>
+                            <div>
+                                {{userRoles[elem.userRole].roleName}} / {{elem.userEmail}}
+                            </div>
+                        </div>
                     </div>
                 </td>
-                <td>
-                    <span [hidden]="elem.userIsVerified === false">
+                <td >
+                    <span [hidden]="elem.userIsVerified === false" class="verified">
                         Yes
                     </span>
-                    <span [hidden]="elem.userIsVerified === true">
+                    <span [hidden]="elem.userIsVerified === true" class="not-verified">
                         No
                     </span>
                 </td>
+                <td>
+                    Assign
+                </td>
+                <td>
+                    -
+                </td>
+                <td class="border-none">
+                    -
+                </td>
+                <td></td>
             </tr>
         </tbody>
     </table>
     
     </div>
     
-    <div [hidden]="elementData.length !== 0">
-        <fa-icon [icon]="faExclamationCircle"></fa-icon>
-        No records found
+    <div class="no-records-found" [hidden]="elementData.length !== 0">
+        <div class="no-records__found">
+            <fa-icon [icon]="faExclamationCircle" size="2x" [styles]="{'color': '#c1c4ce'}"></fa-icon>
+            <b>No records found</b>
+        </div>
     </div>

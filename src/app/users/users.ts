@@ -7,10 +7,10 @@ export const ELEMENT_DATA: User[] = [
 ];
 
 export const USER_ROLES = [
-  { roleName: 'Super Admin', root: 'test' },
-  { roleName: 'Head of Safety', root: 'test' },
-  { roleName: 'User', root: 'test' },
-  { roleName: 'Head of Division', root: 'test' }
+  { id: 1, roleName: 'Super Admin', root: 'test' },
+  { id: 2, roleName: 'Head of Safety', root: 'test' },
+  { id: 3, roleName: 'User', root: 'test' },
+  { id: 4, roleName: 'Head of Division', root: 'test' }
 ];
 
 export const USER_PERMITS = [

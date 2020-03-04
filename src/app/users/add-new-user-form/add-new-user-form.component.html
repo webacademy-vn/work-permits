@@ -1,0 +1,40 @@
+<section class="container">
+    <form class="new-user-form" [formGroup]="form" (ngSubmit)="submit()">
+        <h3>Add New User</h3>
+
+        <div class="form-control">
+            <label>Full name<span>*</span></label><br>
+            <input type="text" formControlName="userFullName">
+        </div>
+
+        <div class="form-control">
+            <label>Email<span>*</span></label><br>
+            <input type="email" formControlName="userEmail">
+        </div>
+
+        <div class="form-control">
+            <!-- <mat-form-field>
+                <label>Select user role<span>*</span></label>
+                <mat-select>
+                  <mat-option *ngFor="let userRole of userRoles"
+                  [value]="userRoles.indexOf(userRole)">
+                    {{userRole.roleName}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field> -->
+              <!-- <mat-form-field appearance="outline">
+                
+                <mat-select formControlName="userRole" placeholder="">
+                  <mat-option *ngFor="let userRole of userRoles" [value]="userRole.id">
+                    {{userRole.roleName}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field> -->
+              <mat-form-field>
+                <mat-label>Outline form field</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+        </div>
+    </form>
+</section>
