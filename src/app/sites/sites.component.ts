@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { SiteService } from './service/site.service';
+
+
+
+
 
 
 
@@ -10,14 +15,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SitesComponent implements OnInit {
 
-title = "123123"
+  sites$ = this.siteService.sites$;
 
 
 
 
-  constructor() { }
+
+
+
+
+
+
+  constructor( private siteService: SiteService) { }
+
 
   ngOnInit() {
   }
 
+
 }
+
+

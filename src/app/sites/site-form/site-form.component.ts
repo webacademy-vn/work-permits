@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { SiteService } from '../service/site.service';
 
 @Component({
   selector: 'app-site-form',
@@ -12,7 +13,9 @@ export class SiteFormComponent implements OnInit {
 
   faExclamationCircle = faExclamationCircle;
 
-  constructor() { }
+  sites = this.siteService.sites;
+
+  constructor( private siteService: SiteService) {  }
 
   ngOnInit() {
     this.initForm();
@@ -26,12 +29,13 @@ export class SiteFormComponent implements OnInit {
       selectOccupier: new FormControl('', [Validators.required]),
       emergencyMobileNumber: new FormControl('', [Validators.required]),
       emergencyEmailId: new FormControl('', [Validators.required, Validators.email]),
-      isActive: new FormControl('active'),
+      isActive: new FormControl(true),
     });
   }
 
+
   submit(){
-    console.log(this.form.value)
+    this.siteService.addSite(this.form.value)
   }
 
 }

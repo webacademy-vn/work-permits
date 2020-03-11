@@ -1,6 +1,6 @@
 <div class="conteiner">
   <form class="add-site" [formGroup]="form" (ngSubmit)="submit()">
-    <h3>Add New Site</h3>
+    <h3>Add New Site {{siteService.name}}</h3>
 
     <div class="form-control">
       <label>Site Name<span>*</span></label><br>
@@ -33,9 +33,9 @@
     </div>
     <div class="form-radio">
       <div>
-        <input type="radio" value="active" formControlName="isActive">
+        <input type="radio" [value]="true" formControlName="isActive">
         <label>Active</label><fa-icon [icon]="faExclamationCircle"></fa-icon>
-        <input class="last-radio" type="radio" value="inactive" formControlName="isActive">
+        <input class="last-radio" type="radio" [value]="false" formControlName="isActive">
         <label>Inactive</label>
       </div>
 

@@ -1,0 +1,31 @@
+<!-- <p>{{ this.siteService.siteTemplate }}site-table works!{{ sitesTamlate }}</p> -->
+
+
+  <!-- <div *ngFor="let value of sites">
+    <p>{{value.siteName}}</p>
+  </div> -->
+
+
+
+
+  <table >
+
+    <tr class="first-tr">
+     <th>SITE NAME</th>
+     <th>DIVISION</th>
+     <th>DEPARTMENT</th>
+     <th>UNIT</th>
+    </tr>
+
+    <tr *ngFor="let value of sitesToDisplay">
+      <td>{{value.siteName}}</td>
+      <td *ngIf="value.siteName">1</td>
+      <td *ngIf="value.siteName">1</td>
+      <td *ngIf="value.siteName">{{value.isActive}}</td>
+    </tr>
+
+   </table>
+
+
+
+

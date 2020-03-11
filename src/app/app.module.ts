@@ -36,6 +36,6 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatExpansionModule
   ],
   bootstrap: [AppComponent],
-  
+
 })
 export class AppModule { }
