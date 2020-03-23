@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SiteService } from './service/site.service';
+import { Site } from './models/site';
 
 
 
@@ -15,10 +16,7 @@ import { SiteService } from './service/site.service';
 })
 export class SitesComponent implements OnInit {
 
-  sites$ = this.siteService.sites$;
-
-
-
+  sites: Site[];
 
 
 
@@ -30,6 +28,7 @@ export class SitesComponent implements OnInit {
 
 
   ngOnInit() {
+    this.siteService.getSites().subscribe((sites: Site[]) => this.sites=sites )
   }
 
 

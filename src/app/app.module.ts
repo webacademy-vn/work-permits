@@ -13,6 +13,7 @@ import { PermitTemplatesModule } from './permit-templates/permit-templates.modul
 import { WorkerProfileModule } from './worker-profile/worker-profile.module';
 import { WorkflowsModule } from './workflows/workflows.module';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     PermitTemplatesModule,
     WorkerProfileModule,
     WorkflowsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent],
 

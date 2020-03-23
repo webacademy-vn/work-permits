@@ -13,7 +13,7 @@ export class SiteFormComponent implements OnInit {
 
   faExclamationCircle = faExclamationCircle;
 
-  sites = this.siteService.sites;
+
 
   constructor( private siteService: SiteService) {  }
 
@@ -35,7 +35,7 @@ export class SiteFormComponent implements OnInit {
 
 
   submit(){
-    this.siteService.addSite(this.form.value)
+
   }
 
 }

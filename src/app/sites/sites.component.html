@@ -12,12 +12,12 @@
     <mat-tab-group  animationDuration="0ms">
       <mat-tab class="mat-tab-group" label="ACTIVE SITES (1)" >
 
-          <app-site-table [sites]="sites$ | async" [isActiveSites]="true"></app-site-table>
+          <app-site-table [sites]="sites" [isActiveSites]="true"></app-site-table>
 
       </mat-tab>
       <mat-tab label="INACTIVE SITES (0)">
 
-          <app-site-table [sites]="sites$ | async" [isActiveSites]="false"></app-site-table>
+          <app-site-table [sites]="sites" [isActiveSites]="false"></app-site-table>
 
       </mat-tab>
     </mat-tab-group>

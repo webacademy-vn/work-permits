@@ -1,0 +1,11 @@
+[
+  {
+    "siteName": "name1",
+    "siteId": 1,
+    "timeZone": "name2",
+    "selectOccupier": "name3",
+    "emergencyMobileNumber": "name4",
+    "emergencyEmailId": "name5",
+    "isActive": true
+  }
+]
